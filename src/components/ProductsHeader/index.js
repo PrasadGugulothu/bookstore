@@ -12,7 +12,7 @@ const ProductsHeader = props => {
 
   return (
     <div className="products-header">
-      <h1 className="products-list-heading">All Books</h1>
+      <h1 className="products-list-heading">All Products</h1>
       <div className="sort-by-container">
         <BsFilterRight className="sort-by-icon" />
         <p className="sort-by">Sort by</p>

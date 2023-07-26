@@ -1,17 +1,10 @@
 import {Link, withRouter} from 'react-router-dom'
-import Cookies from 'js-cookie'
 
 import CartContext from '../../context/CartContext'
 
 import './index.css'
 
-const Header = props => {
-  const onClickLogout = () => {
-    const {history} = props
-    Cookies.remove('jwt_token')
-    history.replace('/login')
-  }
-
+const Header = () => {
   const renderCartItemsCount = () => (
     <CartContext.Consumer>
       {value => {
@@ -33,14 +26,22 @@ const Header = props => {
     <nav className="nav-header">
       <div className="nav-content">
         <div className="nav-bar-mobile-logo-container">
-          <Link to="/" className="nav-link">
-            <h1>Book Store</h1>
+          <Link to="/">
+            <img
+              className="website-logo"
+              src="https://i.pinimg.com/originals/ce/56/99/ce5699233cbc0f142250b520d967dff7.png"
+              alt="website logo"
+            />
           </Link>
         </div>
 
         <div className="nav-bar-large-container">
-          <Link to="/" className="nav-link">
-            <h1>Book Store</h1>
+          <Link to="/">
+            <img
+              className="website-logo"
+              src="https://i.pinimg.com/originals/ce/56/99/ce5699233cbc0f142250b520d967dff7.png"
+              alt="website logo"
+            />
           </Link>
           <ul className="nav-menu">
             <li className="nav-menu-item">
@@ -51,7 +52,7 @@ const Header = props => {
 
             <li className="nav-menu-item">
               <Link to="/products" className="nav-link">
-                Books List
+                Products
               </Link>
             </li>
 

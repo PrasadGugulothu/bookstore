@@ -8,18 +8,20 @@ const Home = () => (
     <Header />
     <div className="home-container">
       <div className="home-content">
-        <h1 className="home-heading">Books enhance your vocabulary.</h1>
+        <h1 className="home-heading">
+          Happiness is not in money but in shopping
+        </h1>
         <img
-          src="https://media.istockphoto.com/id/1222563369/photo/bookstore-shop-exterior-with-books-and-textbooks-in-showcase.jpg?s=612x612&w=0&k=20&c=nvfvNWLiP6LKfhfTUVYppVRmzlpH8-ujIxk5jOtDcCE="
+          src="https://freedesignfile.com/upload/2017/08/People-shopping-fashion-background-vector-01.jpg"
           alt="clothes that get you noticed"
           className="home-mobile-img"
         />
         <p className="home-description">
-          Books play a significant role in our life, especially for children.
-          Reading books increases the knowledge of students, improves their
-          intellect, makes students aware of the various societies, and
-          civilizations across the globe. Moreover, reading books enhances
-          imagination and creativity in the student's mind.
+          Having those needs met allows you to reach goals and have unique
+          experiences, which is in turn another kind of satisfaction. Everyone
+          likes having new things every now and again. Whether you want to bring
+          a new look to a room or your wardrobe, shopping to incorporate
+          something new into your life is always refreshing.
         </p>
         <Link to="/products">
           <button type="button" className="shop-now-button">
@@ -28,7 +30,7 @@ const Home = () => (
         </Link>
       </div>
       <img
-        src="https://media.istockphoto.com/id/1222563369/photo/bookstore-shop-exterior-with-books-and-textbooks-in-showcase.jpg?s=612x612&w=0&k=20&c=nvfvNWLiP6LKfhfTUVYppVRmzlpH8-ujIxk5jOtDcCE="
+        src="https://freedesignfile.com/upload/2017/08/People-shopping-fashion-background-vector-01.jpg"
         alt="clothes that get you noticed"
         className="home-desktop-img"
       />

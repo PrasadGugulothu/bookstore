@@ -117,10 +117,12 @@ class ProductItemDetails extends Component {
         const {productData, quantity, similarProductsData} = this.state
         const {
           availability,
-
+          brand,
+          description,
+          imageUrl,
           price,
           rating,
-
+          title,
           totalReviews,
         } = productData
         const {addCartItem} = value
@@ -131,13 +133,9 @@ class ProductItemDetails extends Component {
         return (
           <div className="product-details-success-view">
             <div className="product-details-container">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/51A685AMYoL._SL160_.jpg"
-                alt="product"
-                className="product-image"
-              />
+              <img src={imageUrl} alt="product" className="product-image" />
               <div className="product">
-                <h1 className="product-name">In Search of Lost Time</h1>
+                <h1 className="product-name">{title}</h1>
                 <p className="price-details">Rs {price}/-</p>
                 <div className="rating-and-reviews-count">
                   <div className="rating-container">
@@ -150,23 +148,14 @@ class ProductItemDetails extends Component {
                   </div>
                   <p className="reviews-count">{totalReviews} Reviews</p>
                 </div>
-                <p className="product-description">
-                  Swann's Way, the first part of A la recherche de temps perdu,
-                  Marcel Proust's seven-part cycle, was published in 1913. In
-                  it, Proust introduces the themes that run through the entire
-                  work. The narrator recalls his childhood, aided by the famous
-                  madeleine; and describes M. Swann's passion for Odette. The
-                  work is incomparable. Edmund Wilson said '[Proust] has
-                  supplied for the first time in literature an equivalent in the
-                  full scale for the new theory of modern physics.
-                </p>
+                <p className="product-description">{description}</p>
                 <div className="label-value-container">
                   <p className="label">Available:</p>
                   <p className="value">{availability}</p>
                 </div>
                 <div className="label-value-container">
                   <p className="label">Brand:</p>
-                  <p className="value">Marcel Proust</p>
+                  <p className="value">{brand}</p>
                 </div>
                 <hr className="horizontal-line" />
                 <div className="quantity-container">
